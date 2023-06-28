@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func calculateCompoundInterest(principal, rate, time float64) float64 {
+	return principal * math.Pow(1+rate, time)
+}
+
+func main() {
+	principal := 1000.0
+	rate := 0.05
+	time := 3.0
+
+	amount := calculateCompoundInterest(principal, rate, time)
+
+	fmt.Printf("O montante após %.2f anos com uma taxa de juros de %.2f é de R$ %.2f\n", time, rate, amount)
+}
+

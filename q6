@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func power(base, exponent int) int {
+    result := 1
+    for i := 0; i < exponent; i++ {
+        result *= base
+    }
+    return result
+}
+
+func main() {
+    base := 2
+    exponent := 5
+
+    result := power(base, exponent)
+
+    fmt.Printf("%d elevado a %d é igual a %d\n", base, exponent, result)
+}
