@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func linearSearch(list []int, target int) bool {
+    for _, value := range list {
+        if value == target {
+            return true
+        }
+    }
+    return false
+}
+
+func main() {
+    list := []int{5, 2, 4, 7, 1, 9, 3}
+    target := 7
+
+    found := linearSearch(list, target)
+
+    if found {
+        fmt.Printf("O elemento %d foi encontrado na lista.\n", target)
+    } else {
+        fmt.Printf("O elemento %d não foi encontrado na lista.\n", target)
+    }
+}
+

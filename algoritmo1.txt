@@ -1,0 +1,4 @@
+leia num1 
+leia num2
+se num1 + num2 = var então
+escrever var
